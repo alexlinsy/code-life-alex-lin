@@ -1,22 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import App from '../components/App';
-import { headData } from '../mock/data';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/main.scss';
+import Navbar from '../components/Navbar';
 
-export default () => {
-  const { title, lang, description } = headData;
+const Home = () => (
+  <div>
+    <Helmet title="Code Life of Alex Lin" />
+    <Navbar />
+    Hello World
+  </div>
+);
 
-  return (
-    <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{title || 'Gatsby Simplefolio'}</title>
-        <html lang={lang || 'en'} />
-        <meta name="description" content={description || 'Gatsby Simplefolio'} />
-      </Helmet>
-      <App />
-    </>
-  );
-};
+export default Home;
