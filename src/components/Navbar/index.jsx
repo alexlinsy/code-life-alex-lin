@@ -23,9 +23,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar__header">Programming Blog</div>
+      <div className="navbar__header">
+        <Link to="/" style={{ color: '#595959' }}>
+          Programming Blog
+        </Link>
+      </div>
       <div className="navbar__icon">
-        <Link to="/">
+        <Link to="/about-me">
           <Img fluid={fluid} />
         </Link>
       </div>

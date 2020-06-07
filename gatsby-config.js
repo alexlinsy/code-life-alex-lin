@@ -4,7 +4,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,14 +21,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Alex Lin`,
         start_url: `/`,
-        background_color: `#fff`,
+        background_color: `#f2f2f2`,
         theme_color: `#02aab0`,
         display: `standalone`,
         icon: 'src/images/header.png',
       },
     },
+    `gatsby-plugin-offline`,
   ],
 };
