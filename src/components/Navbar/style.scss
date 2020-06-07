@@ -1,3 +1,5 @@
+@import '../../style/abstracts/variables';
+
 .navbar {
   height: 100px;
   display: flex;
@@ -7,10 +9,10 @@
   flex-grow: 1;
   padding: 0;
   &__header {
-    color: #595959;
+    color: $main-grey;
     font-size: large;
     padding: 10px;
-    border: black 2px solid;
+    border: $main-grey 2px solid;
     font-weight: 600;
   }
   &__icon {
@@ -22,12 +24,12 @@
   &__links {
     &__item {
       padding: 15px 20px;
-      color: black;
-      font-weight: 500;
+      color: $main-grey;
+      font-weight: 600;
       position: relative;
     }
     &__item:hover {
-      color: black;
+      color: $main-grey;
     }
     &__item:hover:after {
       width: 100%;
@@ -40,7 +42,7 @@
       height: 2px;
       left: 50%;
       position: absolute;
-      background: black;
+      background: $main-grey;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }
