@@ -8,6 +8,8 @@
   justify-content: space-around;
   flex-grow: 1;
   padding: 0;
+  max-width: 1600px;
+  margin: 0 auto;
   &__header {
     color: $main-grey;
     font-size: large;
@@ -19,7 +21,7 @@
     width: 150px;
     height: 70px;
     position: relative;
-    top: 50%;
+    top: 57%;
   }
   &__links {
     &__item {
