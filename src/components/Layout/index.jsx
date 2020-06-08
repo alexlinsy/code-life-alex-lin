@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer';
 import Navbar from '../Navbar';
 import { PortfolioProvider } from '../../context/context';
 import { footerData } from '../../mock/data';
+import './style.scss';
 
 // eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {
