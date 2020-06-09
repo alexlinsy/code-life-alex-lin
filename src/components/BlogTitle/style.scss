@@ -1,0 +1,50 @@
+@import '../../style/abstracts/';
+
+.blogCard {
+  &__card {
+    grid-column: 3 / span 3;
+    align-items: center;
+  }
+  &__postTitle {
+    display: inline-flex;
+    padding: 1px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    padding-right: 1px;
+    @include titleFont;
+  }
+  &__title {
+    font-size: 42px;
+    color: black;
+    padding: 0.25em 0.4em 0.27em;
+    align-self: center;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.015 em;
+  }
+  &__short-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.75;
+    color: $main-grey;
+  }
+  &__read-more {
+    @include titleFont;
+    color: $main-grey;
+    margin-top: 20px;
+  }
+}
+
+@include respond(tab-port) {
+  .blogCard {
+    &__title {
+      font-size: 35px;
+    }
+  }
+}

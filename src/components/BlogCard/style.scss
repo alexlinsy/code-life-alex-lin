@@ -1,0 +1,26 @@
+@import '../../style/abstracts/';
+
+.blogCard {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 6.7%;
+  grid-auto-flow: dense;
+  padding: 60px 0;
+  grid-row-gap: 40px;
+  border-bottom: 1px solid $main-grey;
+  &__image {
+    max-width: 660px;
+    max-height: 370px;
+    grid-column: 1 / span 3;
+  }
+}
+
+@include respond(tab-port) {
+  .blogCard {
+    padding: 40px 0;
+    grid-row-gap: 30px;
+    &__image {
+      grid-column: 1/-1;
+    }
+  }
+}
