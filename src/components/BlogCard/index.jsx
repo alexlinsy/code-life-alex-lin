@@ -10,11 +10,14 @@ const query = graphql`
       nodes {
         id
         title
+        date
+        postNumber
         shortDescription
         color
         format
+        slug
         image {
-          fluid {
+          fluid(quality: 90) {
             ...GatsbyContentfulFluid
           }
         }
@@ -29,8 +32,8 @@ const BlogCard = () => {
     allContentfulPosts: { nodes },
   } = data;
 
-  const posts = nodes.map((post, index) => (
-    <>
+  const posts = nodes.map(post => (
+    <div key={post.id}>
       {post.format === 'right-left' ? (
         <div className="blogCard">
           <div className="blogCard__image">
@@ -39,10 +42,11 @@ const BlogCard = () => {
           <BlogTitle
             id={post.id}
             color={post.color}
-            index={index}
+            index={post.postNumber}
             date={post.date}
             title={post.title}
             shortDescription={post.shortDescription}
+            slug={post.slug}
           />
         </div>
       ) : (
@@ -50,17 +54,18 @@ const BlogCard = () => {
           <BlogTitle
             id={post.id}
             color={post.color}
-            index={index}
+            index={post.postNumber}
             date={post.date}
             title={post.title}
             shortDescription={post.shortDescription}
+            slug={post.slug}
           />
           <div className="blogCard__image">
             <Img fluid={post.image.fluid} />
           </div>
         </div>
       )}
-    </>
+    </div>
   ));
 
   return <>{posts}</>;

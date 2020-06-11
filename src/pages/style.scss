@@ -1,4 +1,5 @@
 @import '../style/abstracts/mixins';
+@import '../style//abstracts/variables';
 
 .home {
   max-width: 1600px;
@@ -14,9 +15,42 @@
   }
 }
 
+.contact {
+  &__title {
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: left;
+    letter-spacing: 0.1em;
+  }
+  &__method {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      margin: 0 20px;
+      color: $main-grey;
+      font-size: 8rem;
+      width: 10rem;
+      height: 10rem;
+      transition: all 0.3s ease-in;
+    }
+    a:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
 @include respond(tab-port) {
   .home {
     padding-top: 40px;
     padding-bottom: 80px;
+  }
+}
+@include respond(phone) {
+  .home {
+    max-width: 500px;
   }
 }
