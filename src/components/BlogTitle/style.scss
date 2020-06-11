@@ -1,9 +1,9 @@
-@import '../../style/abstracts/';
+@import '../../style/abstracts/mixins';
+@import '../../style/abstracts/variables';
 
 .blogCard {
   &__card {
-    grid-column: 3 / span 3;
-    align-items: center;
+    grid-column: span 3;
   }
   &__postTitle {
     display: inline-flex;
@@ -17,7 +17,10 @@
     flex-direction: column;
     white-space: nowrap;
     padding-right: 1px;
-    @include titleFont;
+    span {
+      @include titleFont;
+      padding: 0.25em 0.65em;
+    }
   }
   &__title {
     font-size: 42px;
@@ -27,17 +30,23 @@
     font-weight: 500;
     line-height: 0.95;
     letter-spacing: -0.015 em;
+    text-align: left;
   }
   &__short-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.75;
+    text-align: left;
     color: $main-grey;
   }
   &__read-more {
     @include titleFont;
     color: $main-grey;
     margin-top: 20px;
+    text-align: left;
+  }
+  &__read-more:hover {
+    color: black;
   }
 }
 
@@ -45,6 +54,9 @@
   .blogCard {
     &__title {
       font-size: 35px;
+    }
+    &__card {
+      grid-column: 1/-1;
     }
   }
 }

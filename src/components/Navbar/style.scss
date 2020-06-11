@@ -1,4 +1,5 @@
 @import '../../style/abstracts/variables';
+@import '../../style/abstracts/mixins';
 
 .navbar {
   height: 100px;
@@ -22,6 +23,7 @@
     height: 70px;
     position: relative;
     top: 57%;
+    z-index: 2;
   }
   &__links {
     &__item {
@@ -47,6 +49,29 @@
       background: $main-grey;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
+    }
+  }
+}
+
+@include respond(phone) {
+  .navbar {
+    justify-content: center !important;
+
+    &__header {
+      display: none;
+    }
+    &__icon {
+      position: absolute;
+      left: 40%;
+    }
+    &__links {
+      &__item {
+        padding: 15px 100px;
+      }
+      &__item:hover:after {
+        width: 0;
+        left: 0;
+      }
     }
   }
 }
