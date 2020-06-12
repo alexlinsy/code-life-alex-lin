@@ -62,31 +62,17 @@
     }
     &__icon {
       position: absolute;
-      left: 35%;
+      left: 25%;
     }
-    &__links {
-      &__item:nth-child(1) {
-        padding-top: 15px;
-        padding-right: 150px;
-      }
-      &__item:hover:after {
-        width: 0;
-        left: 0;
-      }
-    }
-  }
-}
-
-@include respond(phone-xs) {
-  .navbar {
     &__links {
       &__item:nth-child(1) {
         padding-top: 15px;
         padding-right: 100px;
       }
-    }
-    &__icon {
-      left: 25%;
+      &__item:hover:after {
+        width: 0;
+        left: 0;
+      }
     }
   }
 }
