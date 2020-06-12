@@ -6,7 +6,14 @@ import './style.scss';
 
 const Home = () => (
   <>
-    <Helmet title="Code Life of Alex Lin" />
+    <Helmet
+      title="Code Life of Alex Lin"
+      meta={{
+        property: 'og:image',
+        content:
+          'https://www.alexlinsy.com/static/be9daeefaeddf2494484f9b6f46ef76b/ee604/header.png',
+      }}
+    />
     <Layout>
       <div style={{ background: '#f2f2f2', height: 'auto' }}>
         <div className="home">
