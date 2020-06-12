@@ -50,13 +50,37 @@
   }
 }
 
+@include respond(tab-land) {
+  .blogCard {
+    &__title {
+      font-size: 40px;
+    }
+    &__card {
+      grid-column: 1/-1;
+    }
+  }
+}
+
 @include respond(tab-port) {
   .blogCard {
     &__title {
       font-size: 35px;
     }
-    &__card {
-      grid-column: 1/-1;
+  }
+}
+
+@include respond(phone) {
+  .blogCard {
+    &__title {
+      font-size: 24px;
+    }
+  }
+}
+
+@include respond(phone-xs) {
+  .blogCard {
+    &__title {
+      font-size: 16px;
     }
   }
 }
