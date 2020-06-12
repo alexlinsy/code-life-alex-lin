@@ -29,7 +29,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar__icon">
-        <Link to="/about-me">
+        <Link to="/">
           <Img fluid={fluid} />
         </Link>
       </div>
