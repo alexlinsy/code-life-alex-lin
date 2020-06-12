@@ -6,10 +6,10 @@ import './style.scss';
 
 const Home = () => (
   <>
-    <Helmet title="Code Life of Alex Lin">
+    <Helmet title="Coding Life of Alex Lin">
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Coding Blog of Alex Lin" />
-      <meta property="og:title" content="Code life of Alex Lin" />
+      <meta property="og:title" content="Coding life of Alex Lin" />
       <meta property="og:description" content="Personal blog and website of Alex Lin" />
       <meta
         property="og:image"
