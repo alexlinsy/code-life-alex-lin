@@ -8,7 +8,7 @@ const Home = () => (
   <>
     <Helmet title="Coding Life of Alex Lin">
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Coding Blog of Alex Lin" />
+      <meta property="og:site_name" content="alexlinsy.com" />
       <meta property="og:title" content="Coding Life of Alex Lin" />
       <meta
         property="og:image"
