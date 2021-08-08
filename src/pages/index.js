@@ -9,12 +9,12 @@ const Home = () => (
     <Helmet title="Coding Life of Alex Lin">
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Coding Blog of Alex Lin" />
-      <meta property="og:title" content="Coding life of Alex Lin" />
-      <meta property="og:description" content="Personal blog and website of Alex Lin" />
+      <meta property="og:title" content="Coding Life of Alex Lin" />
       <meta
         property="og:image"
         content="https://www.alexlinsy.com/static/be9daeefaeddf2494484f9b6f46ef76b/ee604/header.png"
       />
+      <meta property="og:description" content="Personal blog and website of Alex Lin" />
       <meta property="og:image:width" content="200" />
       <meta property="og:image:height" content="200" />
       <meta property="og:url" content="https://www.alexlinsy.com/" />
