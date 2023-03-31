@@ -18,7 +18,7 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: 'Junior front end developer with great passion and self-motivation.',
+  paragraphOne: 'Front end developer with great passion and self-motivation.',
   paragraphTwo:
     'Extensive coding experience with JavaScript, React, CSS libraries and front end IDE. Strong background with agile development and version control system(Git, svn)',
   paragraphThree:
