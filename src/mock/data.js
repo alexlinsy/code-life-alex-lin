@@ -30,6 +30,15 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv1(),
+    img: 'cadd9.jpg',
+    title: 'Cadd9',
+    info: 'Cadd9 Muisc Institute Web Page',
+    info2: '',
+    url: 'https://cadd9.cn',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: uuidv1(),
     img: 'sbe.jpg',
     title: 'SBE-My Account',
     info: 'SBE Hotels Account Management System',
@@ -45,16 +54,7 @@ export const projectsData = [
     info2: 'Coding on React Native',
     url: 'https://www.gobrightline.com/app',
     repo: '', // if no repo, the button will not show up
-  },
-  {
-    id: uuidv1(),
-    img: 'simplycast.jpg',
-    title: 'Simplycast Home Page',
-    info: 'Home page of Simplycast company, an all in one engagement automation platform',
-    info2: '',
-    url: 'https://simplycast.com',
-    repo: '', // if no repo, the button will not show up
-  },
+  }
 ];
 
 // CONTACT DATA
